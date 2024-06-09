@@ -1,0 +1,36 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsx watch./src/index.ts",
+    "start": "node ./dist/index.js",
+    "dev": "tsx watch ./src/index.ts",
+    "build": "tsc",
+    "gen": "drizzle-kit generate",
+    "migrate": "tsx src/drizzle/migrate.ts",
+    "studio": "drizzle-kit studio",
+    "push": "drizzle-kit generate && ",
+    "kibet": "tsx src/drizzle/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/pg": "^8.11.6",
+    "drizzle-kit": "^0.22.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.31.0",
+    "eq": "^0.1.0",
+    "generate": "^0.14.0",
+    "pg": "^8.11.5",
+    "postgres": "^3.4.4",
+    "seed": "^0.4.4",
+    "sql-bricks": "^3.0.1",
+    "tsx": "^4.11.2",
+    "typescript": "^5.4.5"
+  }
+}
